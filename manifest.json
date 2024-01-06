@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "LyricsFinder",
+    "description": "Chrome extension to find song lyrics in Spotify",
+    "version": "1.0.0",
+    "icons": {
+        "16": "./images/icon_16.png",
+        "48": "./images/icon_48.png",
+        "64": "./images/icon_64.png",
+        "128": "./images/icon_128.png"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "https://*.spotify.com/*"
+    ]
+}
